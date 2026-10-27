@@ -29,16 +29,10 @@ requirements.txt
 
 
 4. Program (Python)
-You can run this using VS Code or PyCharm. No external libraries are required.
 
 from pathlib import Path
-
-# Create the main project folder
-
 project_name = "mlops_project"
 base_dir = Path(project_name)
-
-# Define the folder structure
 folders = [
     "data/raw",
     "data/processed",
@@ -47,12 +41,8 @@ folders = [
     "src",
     "reports"
 ]
-
-# Create folders
 for folder in folders:
     (base_dir / folder).mkdir(parents=True, exist_ok=True)
-
-# Create required files
 files = [
     "README.md",
     "requirements.txt",
@@ -64,8 +54,6 @@ for file in files:
     (base_dir / file).touch(exist_ok=True)
 
 print("MLOps project template created successfully!")
-
-# Display the structure
 for path in sorted(base_dir.rglob("*")):
     print(path)
 
