@@ -34,6 +34,7 @@ You can run this using VS Code or PyCharm. No external libraries are required.
 from pathlib import Path
 
 # Create the main project folder
+
 project_name = "mlops_project"
 base_dir = Path(project_name)
 
